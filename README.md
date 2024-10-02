@@ -8,27 +8,27 @@ Built with:
 
 ## Backlog
 
--   [] Dark theme
-    -   [] Theme toggle
-    -   [] Global state (Zustand)
-    -   [] Initialize the state with the last value (local storage)
--   [] Page transitions
--   [] Error page (404)
+-   [ ] Dark theme
+    -   [ ] Theme toggle
+    -   [ ] Global state - Zustand
+    -   [ ] Initialize the state with the previous value from local storage
+-   [ ] Page transitions
+-   [ ] Error page (404)
 
--   [] Layout
+-   [ ] Layout
 
-    -   [] Header with sections
-    -   [] Footer
+    -   [ ] Header with sections
+    -   [ ] Footer
 
--   [] Sections
-    -   [] Home
-        -   [] Bio/intro
-        -   [] Latest notes
-        -   [] Work experience
-    -   [] Projects
-        -   [] Project
-            -   [] Descripción
-            -   [] Links
-            -   [] Live demo
-            -   [] Repo
-    -   [] Skills
+-   [ ] Sections
+    -   [ ] Home
+        -   [ ] Intro
+        -   [ ] Work experience
+        -   [ ] Education
+    -   [ ] Projects
+        -   [ ] Project
+            -   [ ] Descripción
+            -   [ ] Links
+            -   [ ] Live demo
+            -   [ ] Repo
+    -   [ ] Skills
