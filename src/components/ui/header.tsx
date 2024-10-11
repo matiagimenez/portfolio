@@ -16,7 +16,7 @@ export const Header = () => {
 	];
 
 	return (
-		<header className='flex justify-between min-h-20 items-center'>
+		<header className='flex justify-between min-h-24 items-center px-2'>
 			<h1 className='font-bold text-2xl text-pink-500 max-w-10 sm:max-w-none'>
 				<Link href='/'>Matias Gimenez</Link>
 			</h1>

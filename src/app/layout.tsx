@@ -7,6 +7,7 @@ export const metadata: Metadata = {
 import { Open_Sans } from 'next/font/google';
 import { Header } from '@/components/ui/header';
 import { ThemeProvider } from '@/components/providers/theme-provider';
+import { Footer } from '@/components/ui';
 
 const openSans = Open_Sans({
 	subsets: ['latin'],
@@ -20,15 +21,15 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en' className='h-full'>
-			<body className={`h-full ${openSans.className} px-4 lg:px-12`}>
+			<body className={`min-h-full ${openSans.className} px-4 lg:px-12`}>
 				<ThemeProvider
 					attribute='class'
 					defaultTheme='light'
 					disableTransitionOnChange
 				>
 					<Header />
-					<main className='min-h-full'>{children}</main>
-					<footer>Footer</footer>
+					<main className=''>{children}</main>
+					<Footer />
 				</ThemeProvider>
 			</body>
 		</html>
