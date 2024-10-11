@@ -41,7 +41,7 @@ export const Footer = () => {
 				<CarouselContent className='w-full m-auto'>
 					{quotes.map(({ quote, author }) => (
 						<CarouselItem className='w-full pl-0' key={quote}>
-							<Card className='w-full h-28 flex items-center justify-center'>
+							<Card className='w-full h-28 flex items-center justify-center bg-transparent'>
 								<CardContent className='flex items-center aspect-square justify-center p-4'>
 									<blockquote className='text-sm font-medium text-pink-500 text-center'>
 										<p className='py-1 italic font-medium'>
