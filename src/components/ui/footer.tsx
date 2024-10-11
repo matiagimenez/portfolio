@@ -37,7 +37,37 @@ const quotes = [
 export const Footer = () => {
 	return (
 		<footer className='w-full'>
-			<Carousel className='m-auto w-9/12 md:w-full max-w-xl mb-8'>
+			<section className='px-2 text-lg w-full max-w-6xl'>
+				<p className='py-1'>
+					I am currently doing a{' '}
+					<span className='font-semibold text-pink-500'>
+						bachelor&apos;s degree in information systems
+					</span>{' '}
+					in Argentina while working in the IT field.
+				</p>
+				<p className='py-1'>
+					My current job is helping me grow both{' '}
+					<span className='font-semibold text-pink-500'>
+						professionally and personally
+					</span>
+					. This role has allowed me to build on the skills and
+					knowledge I gained from my previous experience, deepening my
+					understanding of various technologies and practices.
+				</p>
+				<p className='py-1'>
+					I am actively{' '}
+					<span className='font-semibold text-pink-500'>
+						contributing to real-world projects
+					</span>
+					, continuously improving my technical abilities,
+					problem-solving skills, and{' '}
+					<span className='font-semibold text-pink-500'>
+						collaborating with diverse teams
+					</span>
+					to achieve project goals.
+				</p>
+			</section>
+			<Carousel className='m-auto my-12 w-9/12 md:w-full max-w-xl'>
 				<CarouselContent className='w-full m-auto'>
 					{quotes.map(({ quote, author }) => (
 						<CarouselItem className='w-full pl-0' key={quote}>
@@ -59,7 +89,7 @@ export const Footer = () => {
 				<CarouselPrevious className='-left-10 md:-left-12' />
 				<CarouselNext className='-right-10 md:-right-12' />
 			</Carousel>
-			<section className='border-t min-h-16 flex gap-4 items-center justify-center'>
+			<section className='border-t min-h-16 mt-8 flex gap-4 items-center justify-center'>
 				<Link href='https://github.com/matiagimenez' target='_blank'>
 					<GitHubLogoIcon className='w-6 h-6' />
 				</Link>
