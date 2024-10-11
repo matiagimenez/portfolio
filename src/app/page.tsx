@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons';
 import { buttonVariants } from '@/components/ui/button';
-import { Education, WorkExperience } from '@/components/ui';
+import { Experience } from '@/components/ui';
 
 export default function Home() {
 	return (
@@ -23,12 +23,15 @@ export default function Home() {
 							Matias
 						</span>
 					</h2>
-					<h3 className='text-2xl lg:text-2xl px-2 md:pr-3'>
+					<h3 className='text-2xl px-2 py-1 md:pr-3 text-pink-500'>
+						University Programmer Analyst
+					</h3>
+					<h4 className='text-xl px-2 md:pr-3'>
 						A passionate{' '}
 						<span className='text-pink-500 font-semibold'>
 							fullstack developer
 						</span>
-					</h3>
+					</h4>
 					<p className='text-lg md:text-xl pt-4 pb-2 px-2 md:pr-3'>
 						This is my personal site made using Next.js, Typescript,
 						and TailwindCSS.
@@ -66,8 +69,7 @@ export default function Home() {
 					</p>
 				</section>
 			</section>
-			<WorkExperience />
-			<Education />
+			<Experience />
 		</>
 	);
 }
