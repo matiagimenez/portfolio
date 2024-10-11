@@ -1,4 +1,3 @@
-'use client';
 import React from 'react';
 import Image from 'next/image';
 import {
@@ -10,7 +9,6 @@ import {
 	CardFooter,
 	Badge,
 } from '@/components/ui';
-import { useTheme } from 'next-themes';
 
 const experience = [
 	{
@@ -37,9 +35,8 @@ const experience = [
 ];
 
 export const WorkExperience = () => {
-	const { theme } = useTheme();
 	return (
-		<section className='mt-16 px-2 max-w-6xl'>
+		<section className='mt-10 px-2 max-w-6xl'>
 			<h2 className='flex items-center gap-2 text-2xl font-bold text-pink-500'>
 				Experience
 			</h2>
@@ -57,20 +54,22 @@ export const WorkExperience = () => {
 					}) => {
 						return (
 							<li key={title}>
-								<Card className='bg-transparent min-h-64'>
+								<Card className='bg-transparent min-h-52'>
 									<CardHeader>
 										<CardTitle className='flex items-center gap-2 text-lg md:text-xl'>
 											<Image
-												priority={true}
-												src={
-													theme === 'dark'
-														? logo_dark
-														: logo_light
-												}
+												src={logo_light}
 												width={40}
 												height={40}
 												alt={`${company} logo`}
-												className='rounded-sm'
+												className='block dark:hidden rounded-sm'
+											/>
+											<Image
+												src={logo_dark}
+												width={40}
+												height={40}
+												alt={`${company} logo`}
+												className='hidden dark:block'
 											/>
 											{title}
 										</CardTitle>
@@ -86,7 +85,7 @@ export const WorkExperience = () => {
 									<CardContent>
 										<p>{description}</p>
 									</CardContent>
-									<CardFooter className='pb-4'>
+									<CardFooter className='pb-6'>
 										{labels.map((text) => (
 											<Badge
 												className='mr-1 font-medium bg-pink-500 text-white'
