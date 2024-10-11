@@ -25,9 +25,9 @@ export const Header = () => {
 				<ul
 					className={`${
 						show
-							? 'absolute right-0 px-4 pl-8 pb-4 rounded-md top-16'
+							? 'absolute right-0 px-10 pb-4 rounded-md top-20'
 							: 'hidden'
-					} bg-background md:p-0 flex flex-col gap-4 border border-t-0 border-r-0 rounded-t-none md:border-0 md:gap-6 font-medium text-lg md:relative md:flex-row md:flex md:top-0 md:right-0`}
+					} bg-background z-50 md:p-0 flex flex-col gap-4 border border-t-0 border-r-0 rounded-t-none md:border-0 md:gap-6 font-medium text-lg md:relative md:flex-row md:flex md:top-0 md:right-0`}
 				>
 					{links.map(({ href, label }) => {
 						return (

@@ -10,7 +10,7 @@ export const MenuButton: React.FC<MenuButtonProps> = ({ show, setShow }) => {
 	if (show) {
 		return (
 			<Button
-				className='md:hidden text-pink-500 px-1'
+				className='md:hidden text-pink-500'
 				onClick={() => setShow(false)}
 				variant='ghost'
 			>
