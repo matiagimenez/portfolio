@@ -15,8 +15,8 @@ const experience = [
 		title: 'Full-stack developer',
 		company: 'PricewaterhouseCoopers',
 		description: 'Development of applications using React and Python',
-		logo_light: '/pwc.png',
-		logo_dark: '/pwc-light.png',
+		logo: '/pwc-dark.png',
+		logo_light: '/pwc-light.png',
 		since: 'Aug. 2024',
 		to: 'Today',
 		labels: ['React.js', 'Python'],
@@ -26,8 +26,8 @@ const experience = [
 		company: 'Universidad Nacional de Luján',
 		description:
 			'Development of websites for teaching staff with the main objective of improving teaching functions in different subjects of the university.',
-		logo_light: '/unlu.jpg',
-		logo_dark: '/unlu.jpg',
+		logo: '/unlu.png',
+		logo_light: '/unlu.png',
 		since: 'Aug. 2022',
 		to: 'Aug. 2024',
 		labels: ['HTML', 'CSS', 'Javascript'],
@@ -45,7 +45,7 @@ export const Experience = () => {
 					({
 						title,
 						company,
-						logo_dark,
+						logo,
 						logo_light,
 						since,
 						to,
@@ -58,18 +58,18 @@ export const Experience = () => {
 									<CardHeader>
 										<CardTitle className='flex items-center gap-2 text-lg md:text-xl'>
 											<Image
-												src={logo_light}
-												width={40}
-												height={40}
+												src={logo}
+												width={50}
+												height={50}
 												alt={`${company} logo`}
 												className='block dark:hidden rounded-sm'
 											/>
 											<Image
-												src={logo_dark}
-												width={40}
-												height={40}
+												src={logo_light}
+												width={50}
+												height={50}
 												alt={`${company} logo`}
-												className='hidden dark:block'
+												className='hidden dark:block rounded-sm'
 											/>
 											{title}
 										</CardTitle>
