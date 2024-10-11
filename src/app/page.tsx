@@ -1,11 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import {
-	GitHubLogoIcon,
-	LinkedInLogoIcon,
-	EnvelopeClosedIcon,
-} from '@radix-ui/react-icons';
-import { Button, buttonVariants } from '@/components/ui/button';
+import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons';
+import { buttonVariants } from '@/components/ui/button';
 
 export default function Home() {
 	return (
@@ -25,9 +21,12 @@ export default function Home() {
 				<h3 className='text-2xl lg:text-2xl px-2 md:pr-3'>
 					A passionate fullstack developer
 				</h3>
-				<p className='text-lg md:text-xl py-4 px-2 md:pr-3'>
+				<p className='text-lg md:text-xl pt-4 pb-2 px-2 md:pr-3'>
 					This is my personal site made using Next.js, Typescript, and
-					TailwindCSS. You can check out the source code on my
+					TailwindCSS.
+				</p>
+				<p className='text-md md:text-xl px-2 pb-4 md:pr-3'>
+					You can check out the source code on my
 					<Link
 						href='https://github.com/matiagimenez'
 						target='_blank'
@@ -36,25 +35,21 @@ export default function Home() {
 						Github.
 					</Link>
 				</p>
-				<p className='flex flex-col md:flex-row gap-2 px-2 md:pr-3'>
-					<Button
-						className={`inline-flex items-center gap-2 h-11 w-36`}
-					>
-						<EnvelopeClosedIcon className='inline' /> Contact me
-					</Button>
+				<p className='flex gap-2 px-2 md:pr-3'>
 					<Link
 						href='https://www.linkedin.com/in/matiagimenez/'
 						target='_blank'
-						className={`inline-flex items-center gap-2 w-36 ${buttonVariants(
+						className={`inline-flex items-center gap-2 w-32 ${buttonVariants(
 							{ variant: 'outline' }
 						)}`}
 					>
-						<LinkedInLogoIcon className='inline' /> LinkedIn
+						<LinkedInLogoIcon className='inline text-blue-500' />
+						LinkedIn
 					</Link>
 					<Link
 						href='https://github.com/matiagimenez'
 						target='_blank'
-						className={`inline-flex items-center gap-2  w-36 ${buttonVariants(
+						className={`inline-flex items-center justify-center gap-2 w-32 ${buttonVariants(
 							{ variant: 'outline' }
 						)}`}
 					>
