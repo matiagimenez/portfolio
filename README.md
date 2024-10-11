@@ -15,11 +15,6 @@ Built with:
 -   [ ] Page transitions
 -   [ ] Error page (404)
 
--   [ ] Layout
-
-    -   [ ] Header with sections
-    -   [ ] Footer
-
 -   [ ] Sections
     -   [ ] Home
         -   [ ] Intro
