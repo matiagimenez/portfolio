@@ -6,3 +6,4 @@ export * from './theme-toggle';
 export * from './carousel';
 export * from './card';
 export * from './home';
+export * from './badge';

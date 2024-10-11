@@ -37,7 +37,7 @@ const quotes = [
 export const Footer = () => {
 	return (
 		<footer className='w-full'>
-			<Carousel className='m-auto w-9/12 md:w-full max-w-sm mb-8'>
+			<Carousel className='m-auto w-9/12 md:w-full max-w-xl mb-8'>
 				<CarouselContent className='w-full m-auto'>
 					{quotes.map(({ quote, author }) => (
 						<CarouselItem className='w-full pl-0' key={quote}>
