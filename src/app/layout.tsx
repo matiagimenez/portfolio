@@ -3,6 +3,9 @@ import './globals.css';
 export const metadata: Metadata = {
 	title: 'Matias Gimenez | Portfolio',
 	description: 'My name is Matias and this is my personal site',
+	icons: {
+		icon: '/favicon.ico',
+	},
 };
 import { Open_Sans } from 'next/font/google';
 import { Header } from '@/components/ui/header';
