@@ -23,8 +23,7 @@ export default function RootLayout({
 			<body className={`h-full ${openSans.className} px-12`}>
 				<ThemeProvider
 					attribute='class'
-					defaultTheme='system'
-					enableSystem
+					defaultTheme='light'
 					disableTransitionOnChange
 				>
 					<Header />
