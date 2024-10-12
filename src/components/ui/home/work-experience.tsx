@@ -74,12 +74,12 @@ export const Experience = () => {
 											{title}
 										</CardTitle>
 										<CardDescription>
-											<p className='text-foreground mt-1'>
+											<span className='text-foreground mt-1 block'>
 												{company}
-											</p>
-											<p>
+											</span>
+											<span className='block'>
 												{since} - {to}
-											</p>
+											</span>
 										</CardDescription>
 									</CardHeader>
 									<CardContent>
