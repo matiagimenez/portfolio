@@ -8,9 +8,8 @@ export const metadata: Metadata = {
 	},
 };
 import { Open_Sans } from 'next/font/google';
-import { Header } from '@/components/ui/header';
-import { ThemeProvider } from '@/components/providers/theme-provider';
-import { Footer } from '@/components/ui';
+import { ThemeProvider } from '@/components/providers';
+import { Header, Footer, PageTransition } from '@/components/ui';
 
 const openSans = Open_Sans({
 	subsets: ['latin'],
@@ -31,7 +30,9 @@ export default function RootLayout({
 					disableTransitionOnChange
 				>
 					<Header />
-					<main className=''>{children}</main>
+					<PageTransition>
+						<main className=''>{children}</main>
+					</PageTransition>
 					<Footer />
 				</ThemeProvider>
 			</body>
