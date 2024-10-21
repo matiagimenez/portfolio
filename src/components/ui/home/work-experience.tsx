@@ -88,7 +88,7 @@ export const Experience = () => {
 									<CardFooter className='pb-6'>
 										{labels.map((text) => (
 											<Badge
-												className='mr-1 font-medium bg-pink-500 text-white'
+												className='mr-1 font-medium bg-pink-500 text-white hover:bg-pink-500'
 												key={text}
 											>
 												{text}
