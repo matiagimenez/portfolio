@@ -23,16 +23,16 @@ export default function Home() {
 							Matias
 						</span>
 					</h2>
-					<h3 className='text-2xl px-2 py-1 md:pr-3 text-pink-500'>
+					<h3 className='text-2xl font-semibold px-2 py-1 md:pr-3 text-pink-500'>
 						University Programmer Analyst
 					</h3>
-					<h4 className='text-xl px-2 md:pr-3'>
-						A passionate{' '}
+					<h4 className='text-xl px-2 py-1 md:pr-3'>
 						<span className='text-pink-500 font-semibold'>
-							fullstack developer
-						</span>
+							Fullstack developer
+						</span>{' '}
+						skilled in Python and React
 					</h4>
-					<p className='text-lg md:text-xl pt-4 pb-2 px-2 md:pr-3'>
+					<p className='text-lg md:text-xl pt-6 pb-2 px-2 md:pr-3'>
 						This is my personal site made using Next.js, Typescript,
 						and TailwindCSS.
 					</p>
@@ -43,7 +43,7 @@ export default function Home() {
 							target='_blank'
 							className='font-semibold ml-1 hover:underline'
 						>
-							Github{' '}
+							Github
 						</Link>
 					</p>
 					<p className='flex gap-2 px-2 md:pr-3'>
