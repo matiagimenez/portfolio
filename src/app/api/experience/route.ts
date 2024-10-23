@@ -10,9 +10,7 @@ export async function GET(): Promise<NextResponse> {
 	} catch (error) {
 		console.error('Failed to fetch experience data:', error);
 		return NextResponse.json(
-			{
-				detail: 'Internal server error',
-			},
+			{ detail: 'Internal server error' },
 			{ status: 500 }
 		);
 	}
