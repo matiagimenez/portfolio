@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons';
 import { buttonVariants } from '@/components/ui/button';
-import { Experience } from '@/components/ui';
+import { WorkExperienceList } from '@/components/ui';
 
 export default function Home() {
 	return (
@@ -69,7 +69,7 @@ export default function Home() {
 					</p>
 				</section>
 			</section>
-			<Experience />
+			<WorkExperienceList />
 		</>
 	);
 }

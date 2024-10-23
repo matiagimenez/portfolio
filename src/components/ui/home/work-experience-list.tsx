@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import axios from 'axios';
 import {
 	Card,
 	CardHeader,
@@ -9,39 +10,20 @@ import {
 	CardFooter,
 	Badge,
 } from '@/components/ui';
+import { WorkExperience } from '@/types/work-experience';
 
-const experience = [
-	{
-		title: 'Full-stack developer',
-		company: 'PricewaterhouseCoopers',
-		description: 'Development of applications using React and Python',
-		logo: '/pwc-dark.png',
-		logo_light: '/pwc-light.png',
-		since: 'Aug. 2024',
-		to: 'Today',
-		labels: ['React.js', 'Python'],
-	},
-	{
-		title: 'Software developer',
-		company: 'Universidad Nacional de Luján',
-		description:
-			'Development of websites for teaching staff with the main objective of improving teaching functions in different subjects of the university.',
-		logo: '/unlu.png',
-		logo_light: '/unlu.png',
-		since: 'Aug. 2022',
-		to: 'Aug. 2024',
-		labels: ['HTML', 'CSS', 'Javascript'],
-	},
-];
+export const WorkExperienceList = async () => {
+	const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
+	const response = await axios.get(`${BASE_URL}/api/experience`);
+	const experiences: WorkExperience[] = response.data;
 
-export const Experience = () => {
 	return (
 		<section className='mt-10 px-2 max-w-6xl mb-6'>
 			<h2 className='flex items-center gap-2 text-2xl font-bold text-pink-500'>
-				Experience
+				Work experience
 			</h2>
 			<ul className='mt-4 flex flex-col gap-5'>
-				{experience.map(
+				{experiences.map(
 					({
 						title,
 						company,
