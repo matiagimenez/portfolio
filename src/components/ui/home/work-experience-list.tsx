@@ -10,6 +10,7 @@ import {
 	Badge,
 } from '@/components/ui';
 import { WorkExperience } from '@/types/work-experience';
+import { BackpackIcon } from '@radix-ui/react-icons';
 
 export const WorkExperienceList = async () => {
 	const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
@@ -29,6 +30,10 @@ export const WorkExperienceList = async () => {
 								<Card className='min-h-52 bg-background z-50'>
 									<CardHeader>
 										<CardTitle className='flex items-center gap-2 text-lg md:text-xl'>
+											<BackpackIcon
+												width={20}
+												height={20}
+											/>{' '}
 											{title}
 										</CardTitle>
 										<CardDescription>
