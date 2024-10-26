@@ -3,6 +3,7 @@ export type WorkExperience = {
 	company: string;
 	description: string;
 	since: string;
+	url: string;
 	to: string;
 	labels: string[];
 };

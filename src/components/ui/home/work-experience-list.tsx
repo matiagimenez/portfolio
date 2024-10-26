@@ -11,6 +11,7 @@ import {
 } from '@/components/ui';
 import { WorkExperience } from '@/types/work-experience';
 import { BackpackIcon } from '@radix-ui/react-icons';
+import Link from 'next/link';
 
 export const WorkExperienceList = async () => {
 	const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
@@ -24,7 +25,15 @@ export const WorkExperienceList = async () => {
 			</h2>
 			<ul className='mt-4 flex flex-col gap-5 z-50 bg-background'>
 				{experiences.map(
-					({ title, company, since, to, description, labels }) => {
+					({
+						title,
+						company,
+						since,
+						to,
+						description,
+						labels,
+						url,
+					}) => {
 						return (
 							<li key={title} className='z-50'>
 								<Card className='min-h-52 bg-background z-50'>
@@ -37,9 +46,12 @@ export const WorkExperienceList = async () => {
 											{title}
 										</CardTitle>
 										<CardDescription>
-											<span className='text-foreground mt-1 block'>
+											<Link
+												href={url}
+												className='text-foreground mt-1 block hover:underline'
+											>
 												{company}
-											</span>
+											</Link>
 											<span className='block'>
 												{since} - {to}
 											</span>
