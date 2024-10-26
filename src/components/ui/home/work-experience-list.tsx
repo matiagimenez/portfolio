@@ -17,16 +17,16 @@ export const WorkExperienceList = async () => {
 	const experiences: WorkExperience[] = response.data;
 
 	return (
-		<section className='mt-10 px-2 max-w-6xl mb-6'>
+		<section className='mt-10 px-2 max-w-6xl mb-6 bg-background w-full z-50'>
 			<h2 className='flex items-center gap-2 text-2xl font-bold text-pink-500'>
 				Work experience
 			</h2>
-			<ul className='mt-4 flex flex-col gap-5'>
+			<ul className='mt-4 flex flex-col gap-5 z-50 bg-background'>
 				{experiences.map(
 					({ title, company, since, to, description, labels }) => {
 						return (
-							<li key={title}>
-								<Card className='bg-transparent min-h-52'>
+							<li key={title} className='z-50'>
+								<Card className='min-h-52 bg-background z-50'>
 									<CardHeader>
 										<CardTitle className='flex items-center gap-2 text-lg md:text-xl'>
 											{title}
