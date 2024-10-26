@@ -3,20 +3,21 @@ import Link from 'next/link';
 import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons';
 import { buttonVariants } from '@/components/ui/button';
 import { WorkExperienceList } from '@/components/ui';
+import { avatar } from '@/assets/images';
 
 export default function Home() {
 	return (
 		<>
-			<section className='lg:w-3/4 flex flex-col items-start md:flex-row md:items-center m-auto mt-0 gap-2 md:gap-8 md:mt-8'>
+			<section className='z-40 lg:w-3/4 flex flex-col items-start md:flex-row md:items-center m-auto mt-0 gap-2 md:gap-8 md:mt-8'>
 				<Image
 					priority={true}
-					src='/avatar.png'
+					src={avatar}
 					width={300}
 					height={400}
 					className='rounded-md p-4 w-auto h-auto'
 					alt='Avatar'
 				/>
-				<section className='grow max-w-lg'>
+				<section className='grow max-w-lg z-100'>
 					<h2 className='text-3xl lg:text-5xl font-bold drop-shadow-lg py-1 px-2 md:pr-3'>
 						Hi, I&apos;m{' '}
 						<span className='text-pink-500 animate-pulse'>

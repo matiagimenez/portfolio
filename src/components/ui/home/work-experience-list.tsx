@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import axios from 'axios';
 import {
 	Card,
@@ -24,35 +23,12 @@ export const WorkExperienceList = async () => {
 			</h2>
 			<ul className='mt-4 flex flex-col gap-5'>
 				{experiences.map(
-					({
-						title,
-						company,
-						logo,
-						logo_light,
-						since,
-						to,
-						description,
-						labels,
-					}) => {
+					({ title, company, since, to, description, labels }) => {
 						return (
 							<li key={title}>
 								<Card className='bg-transparent min-h-52'>
 									<CardHeader>
 										<CardTitle className='flex items-center gap-2 text-lg md:text-xl'>
-											<Image
-												src={logo}
-												width={50}
-												height={50}
-												alt={`${company} logo`}
-												className='block dark:hidden rounded-sm'
-											/>
-											<Image
-												src={logo_light}
-												width={50}
-												height={50}
-												alt={`${company} logo`}
-												className='hidden dark:block rounded-sm'
-											/>
 											{title}
 										</CardTitle>
 										<CardDescription>
