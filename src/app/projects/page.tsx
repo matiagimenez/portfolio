@@ -15,13 +15,13 @@ export default async function Page() {
 
 	return (
 		<>
-			<section className='grow max-w-5xl z-50 bg-background'>
-				<h2 className='text-2xl font-bold drop-shadow-lg py-1 px-2 md:pr-3'>
+			<section className='grow max-w-5xl pt-2'>
+				<h2 className='text-2xl font-bold drop-shadow-lg p-2 md:pr-3'>
 					<span className='text-pink-500 font-semibold'>
 						Projects
 					</span>
 				</h2>
-				<p className='text-lg pt-6 pb-2 px-2 md:pr-3'>
+				<p className='text-lg pb-2 px-2 md:pr-3'>
 					In this section, you will find a collection of projects I
 					have worked on, each representing a unique challenge that
 					helped me{' '}
