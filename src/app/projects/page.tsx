@@ -1,7 +1,8 @@
 import React from 'react';
 import { GlowingStarsBackgroundCard } from '../../components/ui/animated-card';
 import Logos, { LogoContainer } from '@/components/ui/logos';
-import { Project, TechKey } from '@/types/project';
+import { TechKey } from '@/types/tech-keys';
+import { Project } from '@/types/project';
 import axios from 'axios';
 import { GitHubLogoIcon, GlobeIcon } from '@radix-ui/react-icons';
 import Link from 'next/link';
@@ -16,19 +17,21 @@ export default async function Page() {
 		<>
 			<section className='grow max-w-5xl z-50 bg-background'>
 				<h2 className='text-2xl font-bold drop-shadow-lg py-1 px-2 md:pr-3'>
-					My{' '}
 					<span className='text-pink-500 font-semibold'>
-						projects
+						Projects
 					</span>
 				</h2>
 				<p className='text-lg pt-6 pb-2 px-2 md:pr-3'>
-					In this section, you will find a collection of some projects
-					I have worked on.
+					In this section, you will find a collection of projects I
+					have worked on, each representing a unique challenge that
+					helped me{' '}
+					<span className='text-pink-500 font-semibold'>
+						sharpen my skills and expand my abilities.
+					</span>
 				</p>
 				<p className='text-lg pb-2 px-2 md:pr-3'>
-					Each project represents a unique challenge I undertook to
-					enhance my skills my abilities. You have a link to a live
-					demo and another for the repository.
+					For each project, there’s a link to a live demo and another
+					to the code repository.
 				</p>
 			</section>
 			<section className='flex justify-center md:justify-normal gap-4 w-full flex-wrap my-4'>
