@@ -16,8 +16,8 @@ export const Header = () => {
 	];
 
 	return (
-		<header className='flex justify-between min-h-24 items-center px-2'>
-			<h1 className='font-bold text-2xl text-pink-500 max-w-10 sm:max-w-none'>
+		<header className='flex sticky bg-background z-50 top-0 justify-between min-h-24 items-center px-2'>
+			<h1 className='font-bold text-2xl lg:text-3xl text-pink-500 max-w-10 sm:max-w-none'>
 				<Link href='/'>Matias Gimenez</Link>
 			</h1>
 			<nav>
@@ -25,9 +25,9 @@ export const Header = () => {
 				<ul
 					className={`${
 						show
-							? 'absolute right-0 px-10 pb-4 rounded-md top-20'
+							? 'fixed right-0 px-10 pb-4 rounded-md top-20 py-2 h-full gap-4'
 							: 'hidden'
-					} bg-background z-50 md:p-0 flex flex-col gap-4 border border-t-0 border-r-0 rounded-t-none md:border-0 md:gap-6 font-medium text-lg md:relative md:flex-row md:flex md:top-0 md:right-0`}
+					} bg-background z-50 md:p-0 flex flex-col gap-4 border border-pink-500 border-t-0 border-r-0 rounded-t-none md:border-0 md:gap-6 font-medium text-lg md:relative md:flex-row md:flex md:top-0 md:right-0`}
 				>
 					{links.map(({ href, label }) => {
 						return (
