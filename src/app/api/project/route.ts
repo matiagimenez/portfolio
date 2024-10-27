@@ -8,7 +8,7 @@ export async function GET(): Promise<NextResponse> {
 		const project = await Project.find({});
 		return NextResponse.json(project, { status: 200 });
 	} catch (error) {
-		console.error('Failed to fetch project data:', error);
+		console.error('Failed to fetch projects data:', error);
 		return NextResponse.json(
 			{ detail: 'Internal server error' },
 			{ status: 500 }
