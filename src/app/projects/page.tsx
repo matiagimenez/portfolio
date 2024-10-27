@@ -36,7 +36,7 @@ export default async function Page() {
 					({ name, description, demo, repository, stack }) => {
 						return (
 							<GlowingStarsBackgroundCard
-								className='w-1/3 min-w-72 min-h-fit sm:min-w-96 pb-0'
+								className='w-4/5 min-w-72 min-h-fit sm:w-1/3 sm:min-w-96 pb-0'
 								key={name}
 							>
 								<h3 className='font-bold text-lg text-pink-500 py-1'>
@@ -60,7 +60,7 @@ export default async function Page() {
 									<Link
 										href={repository}
 										target='_blank'
-										className={`inline-flex items-center gap-2 bg-background w-44 ${buttonVariants(
+										className={`inline-flex items-center gap-2 bg-background w-40 ${buttonVariants(
 											{ variant: 'outline' }
 										)}`}
 									>
@@ -70,7 +70,7 @@ export default async function Page() {
 									<Link
 										href={demo}
 										target='_blank'
-										className={`inline-flex items-center gap-2 bg-background w-44 ${buttonVariants(
+										className={`inline-flex items-center gap-2 bg-background w-40 ${buttonVariants(
 											{ variant: 'outline' }
 										)}`}
 									>
