@@ -1,1 +1,17 @@
-export type TechKey = 'tailwindcss' | 'next' | 'typescript' | 'react';
+export type TechKey =
+	| 'tailwindcss'
+	| 'next'
+	| 'typescript'
+	| 'react'
+	| 'javascript'
+	| 'python'
+	| 'node'
+	| 'fastapi'
+	| 'postgresql'
+	| 'pytest'
+	| 'jest'
+	| 'git'
+	| 'docker'
+	| 'kubernetes'
+	| 'github'
+	| 'rabbit';
