@@ -8,8 +8,9 @@ import { GitHubLogoIcon, GlobeIcon } from '@radix-ui/react-icons';
 import Link from 'next/link';
 import { buttonVariants } from '@/components/ui';
 
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
+
 export default async function Page() {
-	const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 	const response = await axios.get(`${BASE_URL}/api/project`);
 	const projects: Project[] = response.data;
 
