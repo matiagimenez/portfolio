@@ -14,4 +14,6 @@ export type TechKey =
 	| 'docker'
 	| 'kubernetes'
 	| 'github'
-	| 'rabbit';
+	| 'rabbit'
+	| 'pydantic'
+	| 'mongodb';

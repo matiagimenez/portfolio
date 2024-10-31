@@ -327,6 +327,24 @@ const JestIcon = ({ className }: { className?: string }) => {
 	);
 };
 
+const MongoIcon = ({ className }: { className?: string }) => {
+	return (
+		<svg
+			width='800px'
+			height='800px'
+			className={className}
+			viewBox='0 0 1024 1024'
+			xmlns='http://www.w3.org/2000/svg'
+		>
+			<circle cx='512' cy='512' r='512' fill='#13aa52' />
+			<path
+				d='M648.86 449.44c-32.34-142.73-108.77-189.66-117-207.59-9-12.65-18.12-35.15-18.12-35.15-.15-.38-.39-1.05-.67-1.7-.93 12.65-1.41 17.53-13.37 30.29-18.52 14.48-113.54 94.21-121.27 256.37-7.21 151.24 109.25 241.36 125 252.85l1.79 1.27v-.11c.1.76 5 36 8.44 73.34H526a726.68 726.68 0 0 1 13-78.53l1-.65a204.48 204.48 0 0 0 20.11-16.45l.72-.65c33.48-30.93 93.67-102.47 93.08-216.53a347.07 347.07 0 0 0-5.05-56.76zM512.35 659.12s0-212.12 7-212.08c5.46 0 12.53 273.61 12.53 273.61-9.72-1.17-19.53-45.03-19.53-61.53z'
+				fill='#ffffff'
+			/>
+		</svg>
+	);
+};
+
 const DockerIcon = ({ className }: { className?: string }) => {
 	return (
 		<svg
@@ -409,6 +427,27 @@ const GithubIcon = ({ className }: { className?: string }) => {
 	);
 };
 
+const PydanticIcon = ({ className }: { className?: string }) => {
+	return (
+		<svg
+			role='img'
+			viewBox='0 0 24 24'
+			className={className}
+			xmlns='http://www.w3.org/2000/svg'
+			id='Pydantic--Streamline-Simple-Icons'
+			height='24'
+			width='24'
+		>
+			<title>Pydantic</title>
+			<path
+				d='m23.826 17.316 -4.23 -5.866 -6.847 -9.496c-0.348 -0.48 -1.151 -0.48 -1.497 0l-6.845 9.494 -4.233 5.868a0.925 0.925 0 0 0 0.46 1.417l11.078 3.626h0.002a0.92 0.92 0 0 0 0.572 0h0.002l11.077 -3.626c0.28 -0.092 0.5 -0.31 0.59 -0.592a0.916 0.916 0 0 0 -0.13 -0.825h0.002ZM12.001 4.07l4.44 6.158 -4.152 -1.36c-0.032 -0.01 -0.066 -0.008 -0.098 -0.016a0.8 0.8 0 0 0 -0.096 -0.016c-0.032 -0.004 -0.062 -0.016 -0.094 -0.016s-0.062 0.012 -0.094 0.016a0.74 0.74 0 0 0 -0.096 0.016c-0.032 0.006 -0.066 0.006 -0.096 0.016L7.59 10.221l-0.026 0.008 4.44 -6.158h-0.002Zm-6.273 8.7 4.834 -1.583 0.516 -0.168v9.19L2.41 17.372l3.317 -4.6Zm7.197 7.437V11.02l5.35 1.752 3.316 4.598 -8.666 2.838Z'
+				fill='#e92063'
+				stroke-width='1'
+			></path>
+		</svg>
+	);
+};
+
 const Logos: Record<TechKey, React.FC<{ className?: string }>> = {
 	tailwindcss: TailwindIcon,
 	next: NextIcon,
@@ -426,6 +465,8 @@ const Logos: Record<TechKey, React.FC<{ className?: string }>> = {
 	docker: DockerIcon,
 	kubernetes: KubernetesIcon,
 	github: GithubIcon,
+	mongodb: MongoIcon,
+	pydantic: PydanticIcon,
 };
 
 export default Logos;
