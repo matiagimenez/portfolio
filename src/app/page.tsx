@@ -3,9 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons';
 import { buttonVariants } from '@/components/ui/button';
-import { WorkExperienceList } from '@/components/ui';
+import { WorkExperienceList, ParticlesEffect } from '@/components/ui';
 import { avatar } from '@/assets/images';
-import { ParticlesEffect } from '@/components/ui/home/particles';
 
 export default function Home() {
 	return (
