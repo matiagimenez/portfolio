@@ -12,7 +12,7 @@ export const Header = () => {
 		{ href: '/', label: 'Home' },
 		{ href: '/skills', label: 'Skills' },
 		{ href: '/projects', label: 'Projects' },
-		{ href: '/resources', label: 'Resources' },
+		// { href: '/resources', label: 'Resources' },
 	];
 
 	return (
