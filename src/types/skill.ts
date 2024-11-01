@@ -6,3 +6,9 @@ export type Skill = {
 	url: string;
 	icon: TechKey;
 };
+
+export type Categories = {
+	frontend: Skill[];
+	backend: Skill[];
+	tools: Skill[];
+};
