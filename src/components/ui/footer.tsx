@@ -37,7 +37,7 @@ const quotes = [
 export const Footer = () => {
 	return (
 		<footer className='w-full mt-8'>
-			<section className='px-2 text-lg w-full max-w-5xl'>
+			<section className='text-lg w-full max-w-5xl'>
 				<p className='py-1'>
 					I am currently doing a{' '}
 					<span className='font-semibold text-pink-500'>
