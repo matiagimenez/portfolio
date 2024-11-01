@@ -6,7 +6,7 @@ import { Project } from '@/types/project';
 import axios from 'axios';
 import { GitHubLogoIcon, GlobeIcon } from '@radix-ui/react-icons';
 import Link from 'next/link';
-import { buttonVariants } from '@/components/ui';
+import { buttonVariants, ParticlesEffect } from '@/components/ui';
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
@@ -16,13 +16,12 @@ export default async function Page() {
 
 	return (
 		<>
-			<section className='grow max-w-5xl pt-2'>
-				<h2 className='text-2xl font-bold drop-shadow-lg p-2 md:pr-3'>
-					<span className='text-pink-500 font-semibold'>
-						Projects
-					</span>
+			<section className='grow max-w-5xl pt-4'>
+				<ParticlesEffect />
+				<h2 className='text-3xl font-bold drop-shadow-lg mb-4 md:pr-3'>
+					Projects
 				</h2>
-				<p className='text-lg pb-2 px-2 md:pr-3'>
+				<p className='text-lg pb-2 px-2 md:px-0 md:pr-3'>
 					In this section, you will find a collection of projects I
 					have worked on, each representing a unique challenge that
 					helped me{' '}
@@ -30,7 +29,7 @@ export default async function Page() {
 						sharpen my skills and expand my abilities.
 					</span>
 				</p>
-				<p className='text-lg pb-2 px-2 md:pr-3'>
+				<p className='text-lg pb-2 px-2 md:px-0 md:pr-3'>
 					For each project, there’s a link to a live demo and another
 					to the code repository.
 				</p>
