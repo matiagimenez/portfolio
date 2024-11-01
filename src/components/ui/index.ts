@@ -8,3 +8,5 @@ export * from './card';
 export * from './home';
 export * from './badge';
 export * from './page-transition';
+export * from './skills/skills-card';
+export * from './skills/skills-section';
