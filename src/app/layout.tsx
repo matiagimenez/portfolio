@@ -31,7 +31,7 @@ export default function RootLayout({
 				>
 					<Header />
 					<PageTransition>
-						<main>{children}</main>
+						<main className='px-2'>{children}</main>
 					</PageTransition>
 					<Footer />
 				</ThemeProvider>

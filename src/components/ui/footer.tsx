@@ -36,7 +36,7 @@ const quotes = [
 
 export const Footer = () => {
 	return (
-		<footer className='w-full mt-8'>
+		<footer className='w-full mt-8 px-2'>
 			<section className='text-lg w-full max-w-5xl'>
 				<p className='py-1'>
 					I am currently doing a{' '}
