@@ -13,7 +13,7 @@ import { WorkExperience } from '@/types/work-experience';
 import { BackpackIcon } from '@radix-ui/react-icons';
 import Link from 'next/link';
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
+const BASE_URL = process.env.BASE_URL;
 
 export const WorkExperienceList = async () => {
 	const response = await axios.get(`${BASE_URL}/api/experience`);

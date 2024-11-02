@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Categories } from '@/types/skill';
 import { ParticlesEffect, SkillSection } from '@/components/ui';
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
+const BASE_URL = process.env.BASE_URL;
 
 export default async function Component() {
 	const response = await axios.get(`${BASE_URL}/api/skills`);
