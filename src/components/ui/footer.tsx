@@ -62,7 +62,7 @@ export const Footer = () => {
 					, continuously improving my technical abilities,
 					problem-solving skills, and{' '}
 					<span className='font-semibold text-pink-500'>
-						collaborating with diverse teams
+						collaborating with diverse teams{' '}
 					</span>
 					to achieve project goals.
 				</p>
