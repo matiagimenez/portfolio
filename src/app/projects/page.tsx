@@ -8,6 +8,9 @@ import { GitHubLogoIcon, GlobeIcon } from '@radix-ui/react-icons';
 import Link from 'next/link';
 import { buttonVariants, ParticlesEffect } from '@/components/ui';
 
+export const dynamic = 'force-dynamic';
+export const fetchCache = 'force-no-store';
+
 const BASE_URL = process.env.BASE_URL;
 
 export default async function Page() {

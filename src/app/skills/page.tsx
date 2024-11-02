@@ -3,6 +3,9 @@ import axios from 'axios';
 import { Categories } from '@/types/skill';
 import { ParticlesEffect, SkillSection } from '@/components/ui';
 
+export const dynamic = 'force-dynamic';
+export const fetchCache = 'force-no-store';
+
 const BASE_URL = process.env.BASE_URL;
 
 export default async function Component() {

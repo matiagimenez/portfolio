@@ -5,6 +5,9 @@ import { buttonVariants } from '@/components/ui/button';
 import { WorkExperienceList, ParticlesEffect } from '@/components/ui';
 import { avatar } from '@/assets/images';
 
+export const dynamic = 'force-dynamic';
+export const fetchCache = 'force-no-store';
+
 export default function Home() {
 	return (
 		<>
