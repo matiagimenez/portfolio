@@ -18,11 +18,34 @@ jobs:
     steps:
       - name: Check out files from GitHub
         uses: actions/checkout@v4.1.7
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4.0.3
       - name: Install dependencies
         run: npm install --immutable
       - name: Lint and Format code
         run: npm run lint && npm run format
+  dependencies:
+    name: Check dependencies
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out files from GitHub
+        uses: actions/checkout@v4.1.7
+      - name: Setup Node.js
+        uses: actions/setup-node@v4.0.3
+      - name: Install dependencies
+        run: npm install --immutable
+      - name: Run vulnerability check
+        run: |
+            npm install
+            audit_output=$(npm audit | head -n 1)
 
+            expected="found 0 vulnerabilities"
+
+            while [ "$audit_output" != "$expected" ]; do
+              npm audit fix
+              echo "Error: vulnerabilities found"
+              audit_output=$(npm audit | head -n 1)
+            done
+
+            echo "Dependencies OK"
 
