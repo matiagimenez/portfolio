@@ -1,7 +1,7 @@
 import React from 'react';
-import Link from 'next/link';
 import { ParticlesEffect } from '@/components/ui';
 import { ExternalLinkIcon } from '@radix-ui/react-icons';
+import { LinkPreview } from '@/components/ui/link-preview';
 
 export const dynamic = 'force-dynamic';
 export const fetchCache = 'force-no-store';
@@ -48,19 +48,17 @@ export default function Page() {
           ideas, I hope you find these resources as enriching as I have.
         </p>
       </section>
-      <ul className='flex justify-center md:justify-normal gap-4 w-full flex-wrap flex-col my-4'>
+      <ul className='flex justify-center md:justify-normal gap-4 w-full flex-wrap flex-col my-6 bg-background z-30'>
         {resources.map(({ title, description, url }) => {
           return (
             <li key={title}>
               <h3 className='font-semibold flex text-lg items-center gap-2 hover:text-pink-500'>
-                <Link
-                  href={url}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='hover:underline'
+                <LinkPreview
+                  url={url}
+                  className='font-bold bg-clip-text underline'
                 >
                   {title}
-                </Link>
+                </LinkPreview>{' '}
                 <ExternalLinkIcon className='text-muted-foreground' />
               </h3>
               <p className='text-sm text-muted-foreground'>{description}</p>
