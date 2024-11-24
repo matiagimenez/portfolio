@@ -20,7 +20,7 @@ export const WorkExperienceList = async () => {
   const experiences: WorkExperience[] = response.data;
 
   return (
-    <section className='mt-10 px-2 max-w-6xl mb-6 bg-background w-full z-50'>
+    <section className='mt-10 px-2 max-w-6xl mb-6 bg-background w-full z-40'>
       <h2 className='flex items-center gap-2 text-2xl font-bold text-pink-500'>
         Work experience
       </h2>
