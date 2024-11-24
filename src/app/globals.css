@@ -76,11 +76,3 @@ body {
     @apply bg-background text-foreground;
   }
 }
-
-html::-webkit-scrollbar {
-  width: 10px;
-}
-
-html::-webkit-scrollbar-thumb {
-  background: #ec4899;
-}
