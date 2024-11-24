@@ -36,16 +36,16 @@ const quotes = [
 
 export const Footer = () => {
   return (
-    <footer className='w-full mt-8 px-2'>
-      <section className='text-lg w-full max-w-5xl'>
-        <p className='py-1'>
+    <footer className='w-full mt-8 px-2 bg-background'>
+      <section className='text-lg w-full max-w-5xl bg-background'>
+        <p className='py-1 bg-background'>
           I am currently doing a{' '}
           <span className='font-semibold text-pink-500'>
             bachelor&apos;s degree in information systems
           </span>{' '}
           in Argentina while working in the IT field.
         </p>
-        <p className='py-1'>
+        <p className='py-1 bg-background'>
           My current job is helping me grow both{' '}
           <span className='font-semibold text-pink-500'>
             professionally and personally
@@ -54,7 +54,7 @@ export const Footer = () => {
           gained from my previous experience, deepening my understanding of
           various technologies and practices.
         </p>
-        <p className='py-1'>
+        <p className='py-1 bg-background'>
           I am actively{' '}
           <span className='font-semibold text-pink-500'>
             contributing to real-world projects
@@ -67,7 +67,7 @@ export const Footer = () => {
           to achieve project goals.
         </p>
       </section>
-      <Carousel className='m-auto my-12 w-9/12 md:w-full max-w-xl'>
+      <Carousel className='m-auto my-12 w-9/12 md:w-full max-w-xl bg-background'>
         <CarouselContent className='w-full m-auto'>
           {quotes.map(({ quote, author }) => (
             <CarouselItem className='w-full pl-0' key={quote}>

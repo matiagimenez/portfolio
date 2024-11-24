@@ -20,16 +20,16 @@ export const WorkExperienceList = async () => {
   const experiences: WorkExperience[] = response.data;
 
   return (
-    <section className='mt-10 px-2 max-w-6xl mb-6 bg-background w-full z-40'>
+    <section className='mt-10 px-2 max-w-6xl mb-6 bg-background w-full z-30'>
       <h2 className='flex items-center gap-2 text-2xl font-bold text-pink-500'>
         Work experience
       </h2>
-      <ul className='mt-4 flex flex-col gap-5 z-50 bg-background'>
+      <ul className='mt-4 flex flex-col gap-5 z-30 bg-background'>
         {experiences.map(
           ({ title, company, since, to, description, labels, url }) => {
             return (
-              <li key={title} className='z-50'>
-                <Card className='min-h-52 bg-background z-50'>
+              <li key={title} className='z-30'>
+                <Card className='min-h-52 bg-background z-30'>
                   <CardHeader>
                     <CardTitle className='flex items-center gap-2 text-lg md:text-xl'>
                       <BackpackIcon width={20} height={20} /> {title}
