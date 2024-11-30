@@ -8,7 +8,7 @@ export async function GET(): Promise<NextResponse> {
     const resource = await Resource.find({});
     return NextResponse.json(resource, { status: 200 });
   } catch (error) {
-    console.error('Failed to fetch experience data:', error);
+    console.error('Failed to fetch resources data:', error);
     return NextResponse.json(
       { detail: 'Internal server error' },
       { status: 500 }

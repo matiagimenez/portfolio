@@ -11,7 +11,7 @@ export const fetchCache = 'force-no-store';
 const BASE_URL = process.env.BASE_URL;
 
 export default async function Page() {
-  const response = await axios.get(`${BASE_URL}/api/project`);
+  const response = await axios.get(`${BASE_URL}/api/resource`);
   const resources: Resource[] = response.data;
 
   return (

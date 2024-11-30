@@ -9,4 +9,4 @@ const schema = new Schema({
 });
 
 export const Resource =
-  mongoose.models.Experience || mongoose.model('Resource', schema);
+  mongoose.models.Resource || mongoose.model('Resource', schema);
