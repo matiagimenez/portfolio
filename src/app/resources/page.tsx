@@ -2,29 +2,17 @@ import React from 'react';
 import { ParticlesEffect } from '@/components/ui';
 import { ExternalLinkIcon } from '@radix-ui/react-icons';
 import { LinkPreview } from '@/components/ui/link-preview';
+import { Resource } from '@/types/resource';
+import axios from 'axios';
 
 export const dynamic = 'force-dynamic';
 export const fetchCache = 'force-no-store';
 
-export default function Page() {
-  const resources = [
-    {
-      title: 'Making sense of React Server Components',
-      description: 'A deep dive into the new React Server Components feature',
-      url: 'https://www.joshwcomeau.com/react/server-components/',
-    },
-    {
-      title: 'A Complete Guide to Pytest Fixtures',
-      description: 'A comprehensive guide to Pytest fixtures',
-      url: 'https://betterstack.com/community/guides/testing/pytest-fixtures-guide/',
-    },
-    {
-      title: 'Understanding Patch Decorators in Python’s unittest Framework',
-      description:
-        'A guide to understanding patch decorators in Python’s unittest framework',
-      url: 'https://medium.com/@reetesh043/understanding-patch-decorators-in-pythons-unittest-framework-e802b2aa6f6d',
-    },
-  ];
+const BASE_URL = process.env.BASE_URL;
+
+export default async function Page() {
+  const response = await axios.get(`${BASE_URL}/api/project`);
+  const resources: Resource[] = response.data;
 
   return (
     <>
