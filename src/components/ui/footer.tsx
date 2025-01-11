@@ -17,10 +17,6 @@ const quotes = [
     author: 'Tim Peters',
   },
   {
-    quote: 'Talk is cheap. Show me the code.',
-    author: 'Linus Torvalds',
-  },
-  {
     quote: "If the implementation is hard to explain, it's a bad idea.",
     author: 'Tim Peters',
   },
@@ -31,6 +27,10 @@ const quotes = [
   {
     quote: 'Code is read much more often than it is written.',
     author: 'Guido Van Rossum',
+  },
+  {
+    quote: 'Static typing is to reliable programming what a spelling checker is to a good writer.',
+    author: 'Peter Van Roy',
   },
 ];
 
