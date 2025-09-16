@@ -10,5 +10,5 @@ export type Skill = {
 export type Categories = {
   frontend: Skill[];
   backend: Skill[];
-  tools: Skill[];
+  devops: Skill[];
 };

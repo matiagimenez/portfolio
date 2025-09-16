@@ -10,7 +10,7 @@ const BASE_URL = process.env.BASE_URL;
 
 export default async function Component() {
   const response = await axios.get(`${BASE_URL}/api/skills`);
-  const { frontend, backend, tools }: Categories = response.data;
+  const { frontend, backend, devops }: Categories = response.data;
 
   return (
     <section className='grow max-w-5xl pt-4'>
@@ -34,7 +34,7 @@ export default async function Component() {
 
       <SkillSection title='Frontend' skills={frontend} />
       <SkillSection title='Backend' skills={backend} />
-      <SkillSection title='Tools' skills={tools} />
+      <SkillSection title='DevOps' skills={devops} />
     </section>
   );
 }

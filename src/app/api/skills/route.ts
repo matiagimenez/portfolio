@@ -14,15 +14,15 @@ export async function GET(): Promise<NextResponse> {
       category: 'backend',
     }).sort({ name: 1 });
 
-    const tools = await Skill.find({
-      category: 'tools',
+    const devops = await Skill.find({
+      category: 'devops',
     }).sort({ name: 1 });
 
     return NextResponse.json(
       {
         frontend,
         backend,
-        tools,
+        devops,
       },
       { status: 200 }
     );
