@@ -66,16 +66,20 @@ export default async function Page() {
                   <GitHubLogoIcon className='inline w-4 h-4' />
                   Repository
                 </Link>
-                <Link
-                  href={demo}
-                  target='_blank'
-                  className={`inline-flex items-center gap-2 bg-background w-40 ${buttonVariants(
-                    { variant: 'outline' }
-                  )}`}
-                >
-                  <GlobeIcon className='inline w-4 h-4' />
-                  Deployment
-                </Link>
+                {
+                  demo && (
+                    <Link
+                      href={demo}
+                      target='_blank'
+                      className={`inline-flex items-center gap-2 bg-background w-40 ${buttonVariants(
+                        { variant: 'outline' }
+                      )}`}
+                    >
+                      <GlobeIcon className='inline w-4 h-4' />
+                      Deployment
+                    </Link>
+                  )
+                }
               </p>
             </GlowingStarsBackgroundCard>
           );
