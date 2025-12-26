@@ -37,7 +37,8 @@ export default async function Page() {
         </p>
       </section>
       <section className='flex justify-center md:justify-normal gap-4 w-full flex-wrap my-4'>
-        {projects.map(({ name, description, demo, repository, stack }) => {
+        {projects.map(({ name, description, demo, repository, stack, active }) => {
+          if (!active) return null;
           return (
             <GlowingStarsBackgroundCard
               className='w-4/5 min-w-72 min-h-fit sm:w-1/3 sm:min-w-96 pb-0'
