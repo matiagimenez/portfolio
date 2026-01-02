@@ -472,6 +472,7 @@ const OllamaIcon = ({ className }: { className?: string }) => {
       width='24'
       viewBox='0 0 646 854'
       fill='none'
+      className={className}
       xmlns='http://www.w3.org/2000/svg'
     >
       <path
@@ -503,6 +504,7 @@ const ChromaDBIcon = ({ className }: { className?: string }) => {
     <svg
       xmlns='http://www.w3.org/2000/svg'
       fill='none'
+      className={className}
       viewBox='0 0 24 24'
       id='Chroma--Streamline-Svg-Logos'
       height='24'
