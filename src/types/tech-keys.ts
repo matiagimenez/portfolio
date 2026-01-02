@@ -16,5 +16,7 @@ export type TechKey =
   | 'github'
   | 'rabbit'
   | 'pydantic'
+  | 'chromadb'
+  | 'ollama'
   | 'mongodb'
   | 'datadog';
