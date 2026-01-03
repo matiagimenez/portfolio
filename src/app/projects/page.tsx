@@ -42,7 +42,7 @@ export default async function Page() {
             if (!active) return null;
             return (
               <GlowingStarsBackgroundCard
-                className='w-full min-w-72 min-h-[325px] sm:w-1/2 sm:min-w-96 pb-0'
+                className='w-full min-w-72 min-h-[345px] sm:w-1/2 sm:min-w-96 pb-0'
                 key={name}
               >
                 <h3 className='font-bold text-lg text-pink-500 py-1'>{name}</h3>
